@@ -63,3 +63,24 @@ c = int(input('C ga qiymat bering: '))
 U  = (pow(math.tan(y),3) + math.sin(x * math.sqrt(b - c)) ** 5) / math.sqrt(a - b + c)
 
 print("Result", U)
+
+"""Ex 12"""
+# a = int(input("write a number:"))
+# b = int(input("write a number:"))
+# D = a  2 - b  2
+# C = (a - b) ** 2
+# if D > C:
+#     print("kvadratlarining ayirmasi katta")
+# else :
+#     print("ayirmasining kvadratlari katta")
+ 
+# a = int(input("Write a number"))
+# if a >= 0:
+#     if a % 2 == 0:
+#         print("juft son")
+#     elif a % 10 == 7:
+#         print("oxirgi raqami 7 bilan tugaydi")
+#     else :
+#         print("juft ham emas 7 raqami bilan tugamaydi ham")
+# else :
+#     print("natural son emas")
