@@ -3,7 +3,7 @@
 # x = "      WYEHEHE Hello 3PythonW                      "
 # print (x[4]
 # print (x[6:-3])  # Pyt so it prints from backwards
-# print (x[5:1]) 
+# print (x[5:1]) # slices the indexes 
 
 # print (len(x)) # counts the lenght of the characters 
 # print (x[:]) # prints everything without any chnages 
