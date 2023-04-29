@@ -31,14 +31,14 @@ Shu sonlar oralig`ida joylashgan barcha butun sonlarni kamayish tartibida toping
 Haqiqiy son A(>1) berilgan. 1+1/2+1/3+...+1/N yig`indisi A dan katta bo`ladigan, 
 eng kichik N butun sonni va ushbu summani toping.
 """
-# a = int(input("write a number: "))
+
 # n = int(input("write a number: "))
 # s = 0
 
 # for i in range(1, 1_000_000):
 #     s = s + 1 / i
 #     print (s, end = ' ')
-#     if a < s :
+#     if n < s :
 #         break 
 # print (i) 
 
@@ -94,13 +94,13 @@ Haqiqiy son X va butun son N(>0) berilgan. X –X3/3+X5/5 +...+(–
 Haqiqiy son X va butun son N(>0) berilgan. 1 –X2/2 + X4/4 –... + (–1)
 NX2N/(2N) qiymatini toping.
 """
-x = int(input("give a number:  "))
-n = int(input("give a number:  "))
-s = 1 # 0 bomidi chunki mahrada 0 bomidi
-for i in range(1, n+1):
-    s = s + pow(-1, i) * pow(x, 2 * n) / (2 * n)
-    print(s)
-print(s)
+# x = int(input("give a number:  "))
+# n = int(input("give a number:  "))
+# s = 1 # 0 bomidi chunki mahrada 0 bomidi
+# for i in range(1, n+1):
+#     s = s + pow(-1, i) * pow(x, 2 * n) / (2 * n)
+#     print(s)
+# print(s)
 
 """
 12.
