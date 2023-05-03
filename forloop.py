@@ -61,7 +61,7 @@ toping.
 # x = int(input("give a number: "))
 # n = 2
 # for i in range (2, x + 1):
-#     n = n * 1/i ;
+#     n = n * 1/i
 # print (n) 
 
 """
@@ -70,10 +70,11 @@ Haqiqiy son X va butun son N(>0) berilgan. 1 + X+X2/2 +... + XN/N
 qiymatini toping.
 """
 # x = int(input ("give a number:  "))
-# n = 1
+# n = int(input ("give a number:  ")) 
+# n += 1
 
-# for i in range (1, n+1):
-#     n = n + ((x**1)/i)
+# for i in range (1, n):
+#     n = n + ((x**i)/i)
 # print (n)
      
 """ 
@@ -98,7 +99,7 @@ NX2N/(2N) qiymatini toping.
 # n = int(input("give a number:  "))
 # s = 1 # 0 bomidi chunki mahrada 0 bomidi
 # for i in range(1, n+1):
-#     s = s + pow(-1, i) * pow(x, 2 * n) / (2 * n)
+#     s = s + pow(-1, i) * pow(x, 2 * i) / (2 * i)
 #     print(s)
 # print(s)
 
@@ -142,11 +143,11 @@ Topilgan son 1+X nuqtada ln funksiyasining yaqinlashgan qiymati bo`ladi.
 21.
 """
 
-# A = int(input("Write a number:"))
-# N = int(input("Write a number:"))
-# for i in range(1, N + 1):
-#     x = (i  2) - A  2
-#     print(x)
+A = int(input("Write a number:"))
+N = int(input("Write a number:"))
+for i in range(1, N + 1):
+    x = (i ** 2) - A ** 2
+    print(x)
 
 """
 23.
