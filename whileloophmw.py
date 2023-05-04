@@ -1,3 +1,4 @@
+import random
 """
 1.
 Ikkita butun son A va B (A<B) berilgan. 
@@ -166,7 +167,7 @@ NX2N/(2N) qiymatini toping."""
 11 dan 99 gacha bo`lgan sonlarni kvadratini chiqaring.
 """  
 # for i in range(11, 99):
-#     i = i**2
+#     i = i ** 2
 #     print(i)
   
 """15
@@ -225,8 +226,8 @@ Misol: 123321, 202, 9889, 5555.
 # i = 12
 # s = 0
 # while i <= 80:
-#     s += i**2 
-#     i+=1
+#     s += i ** 2 
+#     i += 1
 #     print(s)
 
 """20 
@@ -256,8 +257,15 @@ Ular orasidan eng kichik butun o`nxonalik sonni toping.
 """
 
 # n = int(input("Write a number:"))
-# for i in range (10, n + 1):
-#         print (i)
+# l = [random.randint(10,n) for i in range(10)]
+# print(l)
+# min_l = l[0]
+# for i in l:
+#     if i < min_l and i >= 10 and i < 100:
+#         min_l = i
+
+# print(min_l)
+
 
 """
 23.
@@ -342,10 +350,18 @@ Berilgan natural son ikkining darajasi bo`la oladimi?
 30.   # ASK THIS!!!
 Berilgan sonni ko`paytuvchilarga ajrating.
 """
-# n = int(input("Write a number:"))
-# a = int(input("Write a number:"))
+n = int(input("Write a number:"))
 
-# print (n/)
+# i = 2
+# s = 1
+# while True:
+#     if n % i == 0:
+#         print(i)
+#         s = s * i
+#     else:
+#         i += 1
+
+
 
 """
 31.
