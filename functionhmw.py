@@ -86,7 +86,7 @@ Lambda
 """
 1.
 """
-import random
+# import random
 # 1.option
 # def print_list_unsorted():
 #     l = [random.randint(1,100) for i in range(10)]
@@ -130,9 +130,9 @@ import random
 
 
 
-lst = ['ali', 'python', 'hello', 'uzbekiston', 'start', 'step', 'usa']
-sortedlist = sorted(lst, key=lambda x:len(x))
-print(sortedlist)
+# lst = ['ali', 'python', 'hello', 'uzbekiston', 'start', 'step', 'usa']
+# sortedlist = sorted(lst, key=lambda x:len(x))
+# print(sortedlist)
 
 
 """
@@ -163,3 +163,21 @@ bu xolatda sonni no'lga bo'lib bo'lmaydi
 #     return a / b
 
 # func1_demo(4, 0)
+
+def my_dec(func):
+    def wrapper(*args, **kwargs):
+        if args[1] == 0:
+            print("not divisible by 0!")
+            return
+        return func(*args)
+    
+    
+    return wrapper
+
+
+def my_func(a:int, b:int):
+    return a/b
+a = my_func(3,2)
+print(a)
+
+
