@@ -67,7 +67,7 @@ class Phone:
     def getColor(self):
         return self.color
     
-    def __str__(self):
+    def __str__(self): # magic method
         return self.name
         
     
