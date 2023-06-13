@@ -120,54 +120,72 @@ INHERITANCE
 # print(bike)
 
 
-class Phone:
-    def __init__(self, name:str,  color:str, price:float):
-        self.name = name
-        self.color= color
-        self.price = price
+# class Phone:
+#     def __init__(self, name:str,  color:str, price:float):
+#         self.name = name
+#         self.color= color
+#         self.price = price
 
-    def setName(self, name):
-        self.name = name
+#     def setName(self, name):
+#         self.name = name
     
-    def getName(self):
-        return self.name
+#     def getName(self):
+#         return self.name
     
-    def getColor(self):
-        return self.color
+#     def getColor(self):
+#         return self.color
     
-    def getColor(self):
-        return self.color
+#     def getColor(self):
+#         return self.color
     
-    def setPrice(self, price):
-        self.price = price
+#     def setPrice(self, price):
+#         self.price = price
     
-    def getPrice(self):
-        return self.price 
+#     def getPrice(self):
+#         return self.price 
     
-    def getInfo(self):
-        return self.info
+#     def getInfo(self):
+#         return self.info
     
-    def __str__(self): # magic method
-        return f"{self.name} {self.color} {self.price}"
+#     def __str__(self): # magic method
+#         return f"{self.name} {self.color} {self.price}"
     
-phone1 = Phone("Redme Note4x", "black", 150)
-print(phone1)
-phone2 = Phone("IphoneX", "white", 700)
-print(phone2)
+# phone1 = Phone("Redme Note4x", "black", 150)
+# print(phone1)
+# phone2 = Phone("IphoneX", "white", 700)
+# print(phone2)
 
 
 
-class Car:
-    def __init__(self, name:str, color:str, speed:int):
-        self.name = name
-        self.speed = speed
-        self.color = color
+# class Car:
+#     def __init__(self, name:str, color:str, speed:int):
+#         self.name = name
+#         self.speed = speed
+#         self.color = color
 
-    def __str__(self): # magic method
-        return f"{self.name} {self.color} {self.speed}"
+#     def __str__(self): # magic method
+#         return f"{self.name} {self.color} {self.speed}"
     
-car1 = Car("Lacetti", " white", 220)
-print(car1)
-car2 = Car("Malibu", "black", 260)
-print(car2)
-car3 = Car("Matiz", "grey", 180)
+# car1 = Car("Lacetti", " white", 220)
+# print(car1)
+# car2 = Car("Malibu", "black", 260)
+# print(car2)
+# car3 = Car("Matiz", "grey", 180)
+
+
+"""
+ENCAPSULATION
+    
+"""
+
+class Passenger:
+    def __init__(self, passportID: str, fullname: str, gender:str) -> None:
+        self.passportID = passportID
+        self.fullname = fullname
+        self.gender = gender
+        
+    def 
+    
+    def __str__(self) -> str:
+        return f"{self.passportID} {self.fullname} {self.gender}"
+    
