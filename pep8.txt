@@ -1,0 +1,47 @@
+PEP 8 - PYTHON ENHANCEMENT PROPOSAL
+It is a documentation which is used for best practices of Python and written by Guido van Rossum, Barry Warsaw, Nick Coghlan
+It is a guideline.
+It improves readibility of python code
+It shows professionalist of your work if you commented well and use necessary whitespaces as well structure your code well.
+
+function: use lowercase word or words. separate words by underscore __
+ ex: function, my_function
+
+variable : use lowercase letter, word, words. separate with underscore
+ex: x, var, my_variable
+
+Class: start with capital letter. the style called camel case or pascal case
+ex : Model, MyClass
+
+Method: use lowercase word and words 
+ex: class_method, method
+
+Constant: Use an uppercase single letter, word, or words
+ex: CONSTANT, MY_CONSTANT, MY_LONG_CONSTANT
+
+Module: use short words to name your files. 
+ex: myclass.py, function.my_function
+
+Package: use lowercase word
+ex: package, mypackage
+
+PEP 8 suggests lines should be limited to 79 characters. This is because it allows you to have multiple files open next to one another, while also avoiding line wrapping
+# Recommended
+total = (first_variable
+         + second_variable
+         - third_variable)
+
+# Not Recommended
+total = (first_variable +
+         second_variable -
+         third_variable)
+Questions:
+How to check python version?
+
+
+inline commenting;
+Use .startswith() and .endswith() instead of slicing. If you were trying to check if a string word was prefixed, or suffixed, with the word cat, 
+it might seem sensible to use list slicing.
+
+However, list slicing is prone to error, and you have to hardcode the number of characters in the prefix or suffix. It is also not clear to someone less familiar with Python 
+list slicing what you are trying to achieve
