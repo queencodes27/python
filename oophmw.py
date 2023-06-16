@@ -260,20 +260,20 @@ class Author:
 authors1 = Author("Michelle" ,"Obama")
 authors2 = Author("Melinda" ,"Gates")
 authors3 = Author("Maye", "Musk")
-print(authors1.getFullname())
+# print(authors1.getFullname())
 
 class Books:
-    def __init__(self, name:str, pages:int, authors:Author) -> None:
+    def __init__(self, name:str, pages:int, authors:list) -> None:
         self.name = name
         self.pages = pages
-        self.authors = []
+        self.authors = authors
     
     def getAuthors(self):
         x = []
         for i in self.authors:
-            x.append(str(i.getAuthors()+ " "))
+            x.append(str(i.getAuthors() + " "))
         y = " ".join(x)
-        return f"  NAME: {self.name}\n PAGES: {self.pages}\n AUTHOR: {y}\n"
+        return f" BOOK_NAME: {self.name}\n PAGES: {self.pages}\n AUTHOR: {y}\n"
     
     def getName(self):
         return self.name
@@ -284,13 +284,36 @@ class Books:
             x.append(str(i.getAuthors()+ " "))
         y = " ".join(x)
         
-        return f" NAME: {self.name}\n PAGES: {self.pages}\n AUTHOR: {y}\n"        
-book1 = Books("Becoming Michelle Obama",448, "Michelle Obama")
-book2 = Books("Moment of Lift", 288, "Melinda Gates")
-book3 = Books("A Woman Makes a Plan", 224, "Maye Musk")
+        return f"BOOK_NAME: {self.name}\n PAGES: {self.pages}\n AUTHOR: {y}\n"        
+book1 = Books("Becoming Michelle Obama",448,[ "Michelle Obama"])
+book2 = Books("Moment of Lift", 288, ["Melinda Gates"])
+book3 = Books("A Woman Makes a Plan", 224, ["Maye Musk"])
 x = [book1, book2, book3]
-print(book1.getName)
+print(book1.getAuthors())
 
+class Library:
+    def __init__(self, name:str, address:str, books:list) -> None:
+        self.name = name
+        self.address = address
+        self.books = books
+        
+    def getName(self):
+        return self.name
+    
+    def getAddress(self):
+        return self.address
+    
+    # def getAllBooks(self):
+    #     result = 0
+    #     for i in self.books:
+            
+    def addBooks(self, total_of_books: Books):
+        self.books.append(total_of_books)
+    
+    
+library = Library("John Harvard Public Lib","Cambridge, MA, United States", [book1, book1, book3])
+print (library)         
+            
             
         
 
