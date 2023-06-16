@@ -38,6 +38,8 @@ total = (first_variable +
 Questions:
 How to check python version?
 
+Identation level: 4 space
+
 
 inline commenting;
 Use .startswith() and .endswith() instead of slicing. If you were trying to check if a string word was prefixed, or suffixed, with the word cat, 

@@ -7,6 +7,15 @@
 
 # A Class is like an object constructor, or a "blueprint" for creating objects.
 
+"""
+
+Getter: A method that allows you to access an attribute in 
+a given class. 
+Setter: A method that allows you to set 
+or mutate the value of an attribute in a class.
+
+"""
+
 # 1. ABSTRACTION
 # 2. ENCAPSULATION
 # 3. INHERITANCE
@@ -157,6 +166,7 @@ INHERITANCE
 
 
 
+
 # class Car:
 #     def __init__(self, name:str, color:str, speed:int):
 #         self.name = name
@@ -177,15 +187,142 @@ INHERITANCE
 ENCAPSULATION
     
 """
+import datetime
 
-class Passenger:
-    def __init__(self, passportID: str, fullname: str, gender:str) -> None:
-        self.passportID = passportID
-        self.fullname = fullname
-        self.gender = gender
-        
-    def 
+# class User:
+#     __user_id = 777
+
+#     def __init__(self, username: str, full_name: str, age: int, email: str) -> None:
+#         self.username = username
+#         self.full_name = full_name
+#         self.__age = age
+#         self._email = email
+
+#     def getYaer(self):
+#         return datetime.datetime.now().year - self.__age
     
-    def __str__(self) -> str:
-        return f"{self.passportID} {self.fullname} {self.gender}"
-    [p]
+#     def getAge(self):
+#         return self.__age
+
+#     def __str__(self) -> str:
+#         return self.username
+    
+# user = User('root', 'Toshmat Karimov', 20, 'toshmat@gmail.com')
+
+# print(user.getYaer())
+# print(user.getAge())
+# print(user._email)
+
+# class Admin(User):
+
+#     def __init__(self, username: str, full_name: str, age: int, email: str, is_admin: bool) -> None:
+#         super().__init__(username, full_name, age, email)
+#         self.__is_admin = is_admin
+
+#     def getIs_admin(self):
+#         return self.__is_admin
+    
+#     def __str__(self):
+#         return f"{self.full_name} {self.getAge()} {self._email} {self.__is_admin}"
+    
+
+# admin = Admin('admin', 'Ali Aliyev', 33, 'admin@gmail.com', True)
+
+# print(admin)
+
+
+# class Student:
+
+#     def __init__(self, s_id: int, full_name: str, age: int) -> None:
+#         self.s_id = s_id
+#         self.full_name = full_name
+#         self.age = age
+
+    
+#     def __str__(self):
+#         return self.full_name
+    
+
+# s1 = Student(123, 'Ali Aliyev', 23)
+# s2 = Student(124, "Toshmat Karimov", 24)
+# s3 = Student(125, 'Aziz Azizov', 21)
+
+# class Group:
+
+#     def __init__(self, name: str) -> None:
+#         self.name = name
+#         self.students = []
+
+#     def addStudent(self, student_obj: Student):
+#         self.students.append(student_obj)
+
+#     def getStudents(self):
+#         return self.students
+
+#     def __str__(self) -> str:
+#         my_text = f"Group name: {self.name}\n\t"
+#         for index, student in enumerate(self.students, 1):
+#             my_text += f"{index} {student}\n\t"
+#         return my_text
+    
+# group1 = Group('FSP U-3/23',)
+# group1.addStudent(s1)
+# group1.addStudent(s2)
+# group1.addStudent(s3)
+# print(group1)
+# print(group1.getStudents())
+
+"""
+ENCAPSULATION CLASS
+"""
+class Point:
+
+    def __init__(self, x: int, y: int):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+    
+point1 = Point(3, 5)
+point2 = Point(-5, 4)
+
+class Circle:
+
+    def __init__(self, raduis: int, color: str, point: Point):
+        self.raduis  = raduis
+        self.color = color
+        self.p_obj = point
+
+    def __str__(self):
+        return f"Raduis: {self.raduis}\nColor: {self.color}\nPoint: {self.p_obj}\n"
+    
+c = Circle(5, 'yellow', point1)
+print(c)
+
+
+class Rectangle:
+
+    def __init__(self, point1: Point, point2: Point, color: str) -> None:
+        self.color = color
+        print(self.checkPoints(point1, point2))
+        if self.checkPoints(point1, point2):
+            self.point1 = point1
+            self.point2 = point2
+        else:
+            print(f"{point1} va {point2} nuqtalardan Rectangle yasab bo'lmaydi !!!")
+        
+
+    
+    @staticmethod
+    def checkPoints(p1: Point, p2: Point):
+        return p1.x != p2.x and p1.y != p2.y
+    
+    def __str__(self):
+        return f"{self.point1} {self.point2}"
+    
+
+r = Rectangle(point1, point2, 'red')
+print(r)
+
+

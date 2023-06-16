@@ -110,5 +110,80 @@ ENCAPSULATION
 
 # r = Rectange("black", point1, point2)
 # print(r)
+    
+    
+
+class Passenger:
+    def __init__(self, passportID: str, fullname: str, gender:str) -> None:
+        self.passportID = passportID
+        self.fullname = fullname
+        self.gender = gender
+    
+    def getFull_Info(self):
+        return self.getFull_Info 
+    
+    def __str__(self) -> str:
+        return f"{self.passportID} {self.fullname} {self.gender}"
+
+passenger = Passenger("31195886", "Elon Musk", "male" )
+print(passenger)
+print()
+
+class Driver:
+    def __init__(self, passportID: str, fullName: str, age: int) -> None:
+        self.passportID = passportID
+        self.fullName = fullName
+        self.age = age
         
+    def getFull_Info(self):
+        return self.getFull_Info   
+    
+    def __str__(self) -> str:
+        return f"{self.passportID} {self.fullName} {self.age}"
+    
+driver = Driver("AC777555", "Nadira Saip", 18)
+print(driver)
+print()
+
+class Train:
+    def __init__(self, trainID: str, name: str, speed: int, driver: Driver) -> None:
+        self.trainID = trainID
+        self.name = name
+        self.speed = speed
+        self.driver_obj = driver 
         
+    def setName(self):
+        self.name
+    
+    def getFull_Info(self):
+        return self.getFull_Info 
+    
+    def __str__(self) -> str:
+        return f" TRAIN_ID: {self.trainID}\n NAME: {self.name}\n SPEED: {self.speed}mph\n DRIVER: {self.driver_obj}\n\t "
+    
+train = Train( "CTA-CHICAGO", "CTA-BlueLine", 70, driver ) 
+print(train)  
+
+class Platform:
+    def __init__(self, platformID:str, status: bool) -> None:
+        self.platformID = platformID
+        self.status = status
+    
+    def getFull_Info(self):
+        return self.getFull_Info   
+    
+    def __str__(self) -> str:
+        return f"{self.platformID} {self.status}"
+    
+platform = Platform("CTA-1", True)
+print(platform)
+
+class Trip:
+    def __init__(self, start_from: str, to: str, train:Train, platform: Platform, passengers: Passenger, priceTrip:int, dateTrip:str) -> None:
+        self.start_from = start_from
+        self.to = to
+        self.train_obj = train
+        self.platform_obj = platform
+        self.passenger_obj = []
+        self.
+    
