@@ -1,0 +1,8 @@
+value = map(lambda m:m.split(";"), file)
+    print(list(value))
+    # print(dict)
+# print(sorted(dict.values(), reverse = True) [:10])
+    for pswd in dictz.values():
+        dictz[pswd] += 1
+    else:
+        dictz[pswd] = 1
