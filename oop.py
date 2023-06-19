@@ -8,6 +8,8 @@
 # A Class is like an object constructor, or a "blueprint" for creating objects.
 
 """
+@property: pythonic way to use getter and setter methods.
+in order to use for private methods you can call
 
 Getter: A method that allows you to access an attribute in 
 a given class. 
