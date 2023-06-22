@@ -13,6 +13,7 @@ from pathlib import Path
 # os.stat : this prints out information about the file such as st.mtime, st.size=20 : string size in the file
 # os.walk()
 
+"""
 os.path.basename(path())
 print(os.basename(path))
 
@@ -21,5 +22,13 @@ fchown: Change the owner and group id of the file given by fd to the numeric uid
 fsync: force write files with filedescriptor fd to disk. 
 pipe : create a pipe. return a pair of file descriptors (r, w) usable for reading and writing
 
+"""
 
+import time
+from random import randint
+from dataclasses import dataclass, field, asdict, astuple
+from itertools import groupby, chain, count, cycle, dropwhile, takewhile
 
+m = [ i for i in range (1, 11)]
+x = groupby(m, key=lambda x: x >= 5)
+print(x)
