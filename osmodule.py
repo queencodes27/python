@@ -29,6 +29,18 @@ from random import randint
 from dataclasses import dataclass, field, asdict, astuple
 from itertools import groupby, chain, count, cycle, dropwhile, takewhile
 
-m = [ i for i in range (1, 11)]
-x = groupby(m, key=lambda x: x >= 5)
-print(x)
+# m = [ i for i in range (1, 11)]
+# x = groupby(m, key=lambda x: x >= 5)
+# print(x)
+
+l =["ali", "alex","toshmat", "azim"]
+print(list(chain.from_iterable(l)))
+
+
+"""
+    Функция chain() модуля itertools создает итератор, 
+    который возвращает элементы из первой iterables, 
+    пока она не будет исчерпана, а затем переходит 
+    к следующей iterables, пока все итерируемые последовательности 
+    не будут исчерпаны.
+"""
