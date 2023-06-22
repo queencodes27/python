@@ -33,8 +33,8 @@ from itertools import groupby, chain, count, cycle, dropwhile, takewhile
 # x = groupby(m, key=lambda x: x >= 5)
 # print(x)
 
-l =["ali", "alex","toshmat", "azim"]
-print(list(chain.from_iterable(l)))
+# l =["ali", "alex","toshmat", "azim"]
+# print(list(chain.from_iterable(l)))
 
 
 """
@@ -44,3 +44,9 @@ print(list(chain.from_iterable(l)))
     к следующей iterables, пока все итерируемые последовательности 
     не будут исчерпаны.
 """
+
+x = ["ali", "bobur", "sancho"]
+c = cycle(x)
+for i in range(20):
+    print (next(c))
+    print (f"{i+1}: {next(c)}")
