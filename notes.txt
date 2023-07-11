@@ -1,0 +1,5 @@
+
+The "field" function is a decorator in Python data classes that allows the user to specify additional metadata about a class field, such as default values, type hints, and validation rules.
+
+asDict: executes data in dict
+asTuple: executes data in tuple list
