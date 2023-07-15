@@ -49,22 +49,22 @@ OUTPUT: [{'name': 'John', 'age': 18, 'grade': 'A'}, {'name': 'Emma', 'age': 19, 
 # 3. ikki sonni EKUB ni aniqlovchi dastur 
 # FIND THE GREAT COMMON DIVISOR
 
-def gcd(a, b):
-    if a == b:
-        return a
-    elif a < b:
-        return gcd(b,a)
-    else:
-        return gcd(b, a -b)
-print(gcd(5,20))
+# def gcd(a, b):
+#     if a == b:
+#         return a
+#     elif a < b:
+#         return gcd(b,a)
+#     else:
+#         return gcd(b, a -b)
+# print(gcd(5,20))
 
-# 2'nd way for finding gcd
-def ekub(number1:int, number2:int):
-    if number2 ==0:
-        return number1
-    return ekub(number2, number1 % number2)
-print(ekub(18,12))
-# # 4.Studenlar haqida ma'lumot berilgan shularni filter() funksiyasini ishlatgan 
+# # 2'nd way for finding gcd
+# def ekub(number1:int, number2:int):
+#     if number2 ==0:
+#         return number1
+#     return ekub(number2, number1 % number2)
+# print(ekub(18,12))
+# # # 4.Studenlar haqida ma'lumot berilgan shularni filter() funksiyasini ishlatgan 
 # holda 18 yoshga teng yoki kattalarini ro'yxatini qaytaring
 
 # students = [
@@ -83,3 +83,5 @@ print(ekub(18,12))
 # x = list(map(lambda z:z ** 3,nums))
 # print(x)
 
+a = [1, 2, 3, 4, 5, 6]
+print(filter[lambda x : x % 2 == 0, a])
