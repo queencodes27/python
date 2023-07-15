@@ -270,61 +270,65 @@ import datetime
 # group1 = Group('FSP U-3/23',)
 # group1.addStudent(s1)
 # group1.addStudent(s2)
-# group1.addStudent(s3)
-# print(group1)
-# print(group1.getStudents())
+# # group1.addStudent(s3)
+# # print(group1)
+# # print(group1.getStudents())
 
-"""
-ENCAPSULATION CLASS
-"""
-class Point:
+# """
+# ENCAPSULATION CLASS
+# """
+# class Point:
 
-    def __init__(self, x: int, y: int):
-        self.x = x
-        self.y = y
+#     def __init__(self, x: int, y: int):
+#         self.x = x
+#         self.y = y
 
-    def __str__(self):
-        return f"({self.x}, {self.y})"
+#     def __str__(self):
+#         return f"({self.x}, {self.y})"
     
-point1 = Point(3, 5)
-point2 = Point(-5, 4)
+# point1 = Point(3, 5)
+# point2 = Point(-5, 4)
 
-class Circle:
+# class Circle:
 
-    def __init__(self, raduis: int, color: str, point: Point):
-        self.raduis  = raduis
-        self.color = color
-        self.p_obj = point
+#     def __init__(self, raduis: int, color: str, point: Point):
+#         self.raduis  = raduis
+#         self.color = color
+#         self.p_obj = point
 
-    def __str__(self):
-        return f"Raduis: {self.raduis}\nColor: {self.color}\nPoint: {self.p_obj}\n"
+#     def __str__(self):
+#         return f"Raduis: {self.raduis}\nColor: {self.color}\nPoint: {self.p_obj}\n"
     
-c = Circle(5, 'yellow', point1)
-print(c)
+# c = Circle(5, 'yellow', point1)
+# print(c)
 
 
-class Rectangle:
+# class Rectangle:
 
-    def __init__(self, point1: Point, point2: Point, color: str) -> None:
-        self.color = color
-        print(self.checkPoints(point1, point2))
-        if self.checkPoints(point1, point2):
-            self.point1 = point1
-            self.point2 = point2
-        else:
-            print(f"{point1} va {point2} nuqtalardan Rectangle yasab bo'lmaydi !!!")
+#     def __init__(self, point1: Point, point2: Point, color: str) -> None:
+#         self.color = color
+#         print(self.checkPoints(point1, point2))
+#         if self.checkPoints(point1, point2):
+#             self.point1 = point1
+#             self.point2 = point2
+#         else:
+#             print(f"{point1} va {point2} nuqtalardan Rectangle yasab bo'lmaydi !!!")
         
 
     
-    @staticmethod
-    def checkPoints(p1: Point, p2: Point):
-        return p1.x != p2.x and p1.y != p2.y
+#     @staticmethod
+#     def checkPoints(p1: Point, p2: Point):
+#         return p1.x != p2.x and p1.y != p2.y
     
-    def __str__(self):
-        return f"{self.point1} {self.point2}"
+#     def __str__(self):
+#         return f"{self.point1} {self.point2}"
     
 
-r = Rectangle(point1, point2, 'red')
-print(r)
+# r = Rectangle(point1, point2, 'red')
+# print(r)
 
-
+from collections import deque
+x = deque([12, 1,4,56], maxlen=3)
+for i in range(20):
+    x.appendleft(i)
+    print(x)

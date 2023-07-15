@@ -82,3 +82,4 @@ print(ekub(18,12))
 # print(nums)
 # x = list(map(lambda z:z ** 3,nums))
 # print(x)
+

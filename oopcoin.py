@@ -11,8 +11,9 @@ coin3 = Coin(12)
 coins = [coin1, coin2, coin3]
 
 # print(coins)
-    
+
 class PaperMoney:
+    
     def __init__(self, value: int) -> None:
         self.value = value
     
